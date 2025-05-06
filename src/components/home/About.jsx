@@ -45,6 +45,28 @@ export default function About() {
             Add to cart
           </button>
         </div>
+
+        {/* orange vector */}
+        <div className="absolute bottom-32 right-44">
+          <Image
+            src="/images/quote-decor.png"
+            alt="Leaf"
+            width={50}
+            height={50}
+            className="rotate-45"
+          />
+        </div>
+
+        {/* leaf */}
+        <div className="absolute top-8 right-32">
+          <Image
+            src="/images/leaf1.png"
+            alt="Leaf"
+            width={66}
+            height={50}
+            className="-rotate-[85deg]"
+          />
+        </div>
       </div>
 
       {/* Right side - Text content */}
