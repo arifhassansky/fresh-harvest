@@ -1,59 +1,39 @@
-// src/redux/productSlice.js
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-const initialState = {
-  products: [],
-  loading: false,
-  error: null,
-};
+export const fetchProducts = createAsyncThunk(
+  "product/fetchProducts",
+  async () => {
+    const response = await axios.get(
+      "https://code-commando.com/api/v1/products"
+    );
+    return response.data.data;
+  }
+);
 
 const productSlice = createSlice({
   name: "product",
-  initialState,
-  reducers: {
-    // Action to set the products
-    setProducts: (state, action) => {
-      state.products = action.payload;
-    },
-    // Action to add a product
-    addProduct: (state, action) => {
-      state.products.push(action.payload);
-    },
-    // Action to update a product
-    updateProduct: (state, action) => {
-      const index = state.products.findIndex(
-        (product) => product.id === action.payload.id
-      );
-      if (index !== -1) {
-        state.products[index] = action.payload;
-      }
-    },
-    // Action to remove a product
-    removeProduct: (state, action) => {
-      state.products = state.products.filter(
-        (product) => product.id !== action.payload
-      );
-    },
-    // Action to handle loading state
-    setLoading: (state, action) => {
-      state.loading = action.payload;
-    },
-    // Action to handle error state
-    setError: (state, action) => {
-      state.error = action.payload;
-    },
+  initialState: {
+    products: [],
+    loading: false,
+    error: null,
+  },
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchProducts.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchProducts.fulfilled, (state, action) => {
+        state.loading = false;
+        state.products = action.payload;
+      })
+      .addCase(fetchProducts.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message;
+      });
   },
 });
 
-// Export the actions
-export const {
-  setProducts,
-  addProduct,
-  updateProduct,
-  removeProduct,
-  setLoading,
-  setError,
-} = productSlice.actions;
-
-// Export the reducer
 export default productSlice.reducer;

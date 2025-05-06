@@ -5,7 +5,7 @@ export const fetchCategories = createAsyncThunk(
   "category/fetchCategories",
   async (_, { getState }) => {
     const token = getState().auth.token;
-    const res = await axios.get("http://localhost:3001/api/v1/category", {
+    const res = await axios.get("https://code-commando.com/api/v1/category", {
       headers: { Authorization: token },
     });
     return res.data.data;
@@ -13,9 +13,9 @@ export const fetchCategories = createAsyncThunk(
 );
 
 const categorySlice = createSlice({
-  name: "category",
+  name: "categoryName",
   initialState: {
-    categories: [],
+    categoryName: [],
     loading: false,
   },
   extraReducers: (builder) => {
@@ -24,7 +24,7 @@ const categorySlice = createSlice({
         state.loading = true;
       })
       .addCase(fetchCategories.fulfilled, (state, action) => {
-        state.categories = action.payload;
+        state.categoryName = action.payload;
         state.loading = false;
       });
   },
