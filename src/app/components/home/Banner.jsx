@@ -24,7 +24,7 @@ export default function Banner() {
             </button>
 
             <Image
-              src="/images/vector.png"
+              src="https://i.ibb.co.com/DDz6ph5n/Vector.png"
               alt="Salad"
               width={55}
               height={37}

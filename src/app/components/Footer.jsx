@@ -80,15 +80,20 @@ export default function Footer() {
             Accepted Payment Methods:
           </p>
           <div className="flex gap-3 mt-3">
-            <Image src="/images/visa.png" alt="Visa" width={50} height={30} />
             <Image
-              src="/images/paypal.png"
+              src="https://i.ibb.co.com/NgyjjnyS/Visa.png"
+              alt="Visa"
+              width={50}
+              height={30}
+            />
+            <Image
+              src="https://i.ibb.co.com/KcpQysfw/Paypal.png"
               alt="PayPal"
               width={50}
               height={30}
             />
             <Image
-              src="/images/applepay.png"
+              src="https://i.ibb.co.com/m5y8p5VC/ApplePay.png"
               alt="Apple Pay"
               width={50}
               height={30}

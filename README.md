@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fresh Harvest
 
-## Getting Started
+A web application for browsing and purchasing fresh foods and vegetables.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Product Catalog**: Browse a wide variety of fresh produce.
+- **Product Details**: See a product details.
+- **Special Offers**: Get discounts on selected items.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop views.
+- **User Authentication**: Secure login and account management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, Tailwind CSS
+- **Deployment**: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+To run the project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/arifhassansky/fresh-harvest.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+````
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Navigate to the project folder:
 
-## Deploy on Vercel
+   ```bash
+   cd fresh-harvest
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:3000`.
+
+## Deployment
+
+This project is deployed on **Vercel**. For live deployment, visit:
+
+- [Fresh Harvest - Vercel](https://fresh-harvest-8y7qjjsi5-md-arif-hassans-projects.vercel.app)
+
+## Usage
+
+- Browse products, view special offers, and make purchases.
+- The app adjusts automatically based on screen size, ensuring an optimal experience across devices.
+
+## Acknowledgements
+
+- Vercel for deployment.
+- Tailwind CSS for the awesome styling framework.
+- Next.js for a fast and efficient frontend framework.
+````

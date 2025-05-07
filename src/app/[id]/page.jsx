@@ -44,8 +44,8 @@ const ProductDetailsPage = () => {
             <Image
               src={productImage}
               alt="Product Image"
-              width={400}
-              height={400}
+              width={566}
+              height={566}
               className="rounded-2xl object-cover"
             />
           </div>
