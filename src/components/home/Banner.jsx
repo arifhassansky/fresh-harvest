@@ -9,8 +9,8 @@ export default function Banner() {
           <span className="text-xl px-3 py-1 text-[#749B3F] font-medium bg-[#749B3F1A]">
             Welcome to Fresh Harvest
           </span>
-          <h1 className="mt-4 text-[80px] md:text-5xl font-medium leading-tight">
-            Fresh Fruits and <br /> Vegetables
+          <h1 className="mt-4 text-4xl md:text-[80px]  font-medium leading-tight">
+            Fresh Fruits and <br className="hidden md:block" /> Vegetables
           </h1>
           <p className="mt-4 font-sm text-gray-600">
             At Fresh Harvest, we are passionate about providing you with the
@@ -99,7 +99,7 @@ export default function Banner() {
           alt="Girl with vegetables"
           width={772}
           height={884}
-          className="absolute bottom-0 -right-12 z-10 w-[772px] h-[804px] object-cover"
+          className="absolute bottom-0 -right-12 z-10 w-[434px] h-[473px] md:w-[772px] md:h-[804px] object-cover"
         />
       </div>
 

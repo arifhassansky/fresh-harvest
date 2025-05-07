@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ProductCard = ({ product }) => {
   const productImage = product.images && product.images[0];
 
   return (
-    <div className="bg-white px-3 py-[10px] rounded-xl shadow-sm hover:shadow-md flex flex-col items-center">
+    <Link
+      href={`/${product.id}`}
+      className="bg-white px-3 py-[10px] rounded-xl shadow-sm hover:shadow-md flex flex-col items-center"
+    >
       {productImage ? (
         <Image
           src={productImage}
@@ -25,7 +29,7 @@ const ProductCard = ({ product }) => {
       >
         Add to cart
       </button>
-    </div>
+    </Link>
   );
 };
 

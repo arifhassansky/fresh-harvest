@@ -27,9 +27,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${rubik.variable} ${questrial.variable}  antialiased `}>
-        <Navbar />
-        <ReduxProvider>{children}</ReduxProvider>
-        <Footer />
+        <ReduxProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ReduxProvider>
       </body>
     </html>
   );

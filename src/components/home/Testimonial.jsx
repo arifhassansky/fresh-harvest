@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Testimonial() {
   return (
-    <section className=" py-16 px-6 md:px-20">
+    <section className=" py-16 px-6 md:px-20 mb-[150px]">
       <div className="text-center mb-10">
-        <div className="inline-block bg-green-800 text-green-200 px-4 py-1 rounded-full text-sm font-semibold mb-3">
+        <div className="inline-block bg-[#749B3F]/10 text-[#749B35] px-4 py-1 rounded-full text-sm font-semibold mb-3">
           Testimonial
         </div>
         <h2 className="text-4xl md:text-5xl font-bold text-[#1D203E]">

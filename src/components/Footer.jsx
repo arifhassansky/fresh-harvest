@@ -9,25 +9,24 @@ export default function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center mb-4">
             <Image
-              src="/logo.svg"
+              src="/images/logo.png"
               alt="Logo"
-              width={40}
-              height={40}
+              width={296}
+              height={51}
               className="mr-2"
             />
-            <span className="text-2xl font-semibold">Fresh Harvests</span>
           </div>
 
           <p className="text-sm font-semibold mb-2">Download App:</p>
           <div className="flex gap-3">
             <Image
-              src="/appstore.png"
+              src="/images/appstore.png"
               alt="App Store"
               width={140}
               height={40}
             />
             <Image
-              src="/googleplay.png"
+              src="/images/googleplay.png"
               alt="Google Play"
               width={140}
               height={40}
@@ -79,15 +78,15 @@ export default function Footer() {
             Accepted Payment Methods:
           </p>
           <div className="flex gap-3 mt-3">
-            <Image src="/payments/visa.png" alt="Visa" width={50} height={30} />
+            <Image src="/images/visa.png" alt="Visa" width={50} height={30} />
             <Image
-              src="/payments/paypal.png"
+              src="/images/paypal.png"
               alt="PayPal"
               width={50}
               height={30}
             />
             <Image
-              src="/payments/applepay.png"
+              src="/images/applepay.png"
               alt="Apple Pay"
               width={50}
               height={30}
@@ -100,22 +99,22 @@ export default function Footer() {
         <p>© Copyright 2024, All Rights Reserved by Banana Studio</p>
         <div className="flex gap-4 mt-4 md:mt-0">
           <Image
-            src="/icons/twitter.png"
+            src="/images/twitter.png"
             alt="Twitter"
-            width={24}
-            height={24}
+            width={40}
+            height={40}
           />
           <Image
-            src="/icons/facebook.png"
+            src="/images/facebook.png"
             alt="Facebook"
-            width={24}
-            height={24}
+            width={40}
+            height={40}
           />
           <Image
-            src="/icons/instagram.png"
+            src="/images/instagram.png"
             alt="Instagram"
-            width={24}
-            height={24}
+            width={40}
+            height={40}
           />
         </div>
       </div>
