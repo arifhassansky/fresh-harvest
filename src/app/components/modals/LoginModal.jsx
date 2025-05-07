@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useLoginUserMutation } from "@/redux/features/authApi";
 import { setAuth } from "@/redux/features/authSlice";
+import { toast } from "react-toastify";
 
 export default function LoginModal({ onClose, onSwitch }) {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ export default function LoginModal({ onClose, onSwitch }) {
     try {
       const res = await loginUser(formData).unwrap();
       dispatch(setAuth({ user: res.user, token: res.token }));
-      alert("Login successful!");
+      toast.success("Login successful!");
       onClose();
     } catch (err) {
       // Error already handled by RTK Query

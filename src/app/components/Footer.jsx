@@ -4,7 +4,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 export default function Footer() {
   return (
     <footer className="bg-[#F2F8F3] text-[#2A2A2A] pt-12 pb-6">
-      <div className="px-12 grid md:grid-cols-5 grid-cols-1 gap-8 mb-10">
+      <div className="px-12 grid md:grid-cols-5 grid-cols-2 gap-8 mb-10">
         {/* Logo + App Store */}
         <div className="md:col-span-2">
           <div className="flex items-center mb-4">
@@ -18,18 +18,20 @@ export default function Footer() {
           </div>
 
           <p className="text-sm font-semibold mb-2">Download App:</p>
-          <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row gap-3 items-center sm:items-start">
             <Image
               src="/images/appstore.png"
               alt="App Store"
               width={140}
               height={40}
+              className="w-[120px] sm:w-[140px]"
             />
             <Image
               src="/images/googleplay.png"
               alt="Google Play"
               width={140}
               height={40}
+              className="w-[120px] sm:w-[140px]"
             />
           </div>
         </div>
@@ -95,9 +97,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t pt-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto text-sm text-gray-600">
+      <div className="border-t pt-6 flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl mx-auto text-sm text-gray-600">
         <p>© Copyright 2024, All Rights Reserved by Banana Studio</p>
-        <div className="flex gap-4 mt-4 md:mt-0">
+        <div className="flex gap-4 mb-4 md:mt-0">
           <Image
             src="/images/twitter.png"
             alt="Twitter"

@@ -26,13 +26,13 @@ const blogPosts = [
 
 export default function Blogs() {
   return (
-    <section className="py-20 px-6 md:px-20">
+    <section className="pb-20 px-6 md:px-20">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <div className="inline-block bg-green-800 text-green-200 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+        <div className="inline-block bg-[#749B3F1A] text-[#749B3F] px-4 py-1 rounded-full font-medium mb-4">
           Our Blog
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-[#1D203E]">
+        <h2 className="text-4xl md:text-5xl font-meduim text-[#1D203E]">
           Fresh Harvest Blog
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto mt-3 text-sm md:text-base">
@@ -45,7 +45,7 @@ export default function Blogs() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {blogPosts.map((post, idx) => (
           <div key={idx} className="space-y-4">
-            <div className="rounded-3xl overflow-hidden">
+            <div className="rounded-[20px] overflow-hidden">
               <Image
                 src={post.image}
                 alt={post.title}

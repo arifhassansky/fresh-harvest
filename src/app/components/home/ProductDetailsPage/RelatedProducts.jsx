@@ -32,7 +32,7 @@ export default function RelatedProducts() {
         </h2>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
         {products.map((product) => (
           <div
             key={product.name}

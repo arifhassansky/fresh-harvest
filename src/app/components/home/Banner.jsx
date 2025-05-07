@@ -28,24 +28,26 @@ export default function Banner() {
               alt="Salad"
               width={55}
               height={37}
-              className="absolute -bottom-16 left-30"
+              className="absolute -bottom-16 left-30 md:block hidden"
             />
           </div>
 
           {/* Coupon Card */}
-          <div className="mt-6 p-4 ml-56 bg-[#EBEBEB] rounded-xl flex items-center gap-4 shadow-md w-max">
-            <div>
-              <p className="text-sm text-[#176D38] font-meduim mb-[3px]">
+          <div className="mt-6 p-4 bg-[#EBEBEB] rounded-xl shadow-md w-full max-w-fit md:ml-56 flex flex-col md:flex-row items-center gap-4">
+            <div className="text-center md:text-left">
+              <p className="text-sm text-[#176D38] font-medium mb-[3px]">
                 Special Offer
               </p>
-              <p className="text-[28px] font-meduim">Fresh Salad</p>
-              <p className="text-green-600 font-meduim">
+              <p className="text-[24px] md:text-[28px] font-medium">
+                Fresh Salad
+              </p>
+              <p className="text-green-600 font-medium">
                 Up to
                 <span className="text-black">
                   <span className="font-medium text-2xl">70% </span>off
                 </span>
               </p>
-              <p className="mt-[9px] text-xs font-bold text-white bg-[#176D38] px-3 py-[6px] w-max rounded-[35px]">
+              <p className="mt-[9px] text-xs font-bold text-white bg-[#176D38] px-3 py-[6px] w-max mx-auto md:mx-0 rounded-[35px]">
                 CODE : <span className="text-[#FAC714]">FRESH25</span>
               </p>
             </div>

@@ -20,7 +20,7 @@ export default function About() {
         />
 
         {/* Logo tag */}
-        <div className="absolute bottom-40 left-60 bg-white rounded px-4 py-2 shadow-md flex items-center gap-2">
+        <div className="absolute bottom-20 md:bottom-40 left-28 md:left-60 bg-white rounded px-4 py-2 shadow-md flex items-center gap-2">
           <Image
             src="/images/Logo-icon.png"
             alt="Leaf"
@@ -31,7 +31,7 @@ export default function About() {
         </div>
 
         {/* Product card */}
-        <div className="absolute -bottom-10 right-60 bg-white rounded-xl p-[6px] shadow-md text-center">
+        <div className="absolute -bottom-30 md:-bottom-10 right-24 md:right-60 bg-white rounded-xl p-[6px] shadow-md text-center">
           <Image
             src="/images/letus.png"
             alt="Lettuce"
@@ -70,11 +70,13 @@ export default function About() {
       </div>
 
       {/* Right side - Text content */}
-      <div className="w-full md:w-1/2 text-center md:text-left">
+      <div className="w-full md:w-1/2  mt-40 md:mt-0">
         <div className="inline-block bg-green-100 text-[#749B3F] font-semibold px-3 py-1 rounded-lg mb-4">
           About us
         </div>
-        <h2 className="text-5xl font-meduim mb-4">About Fresh Harvest</h2>
+        <h2 className="text-4xl md:text-5xl font-meduim mb-4">
+          About Fresh Harvest
+        </h2>
         <p className="text-gray-600 text-base leading-relaxed mb-4">
           Welcome to Fresh Harvest, your premier destination for high-quality
           and fresh produce. We are passionate about providing you with the

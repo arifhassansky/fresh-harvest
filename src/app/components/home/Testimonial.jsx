@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Testimonial() {
   return (
-    <section className=" py-16 px-6 md:px-20 mb-[150px]">
+    <section className="py-16 px-6 md:px-20">
       <div className="text-center mb-10">
         <div className="inline-block bg-[#749B3F]/10 text-[#749B35] px-4 py-1 rounded-full text-sm font-semibold mb-3">
           Testimonial
@@ -31,12 +31,12 @@ export default function Testimonial() {
             alt="Quote decoration"
             width={40}
             height={40}
-            className="absolute top-4 left-4"
+            className="absolute -top-4 -right-6"
           />
         </div>
 
         {/* Testimonial box */}
-        <div className="bg-[#F4F5F7] text-black p-6 md:p-8 rounded-3xl max-w-xl shadow-lg">
+        <div className="bg-[#F4F5F7] text-black p-6 md:p-8 rounded-3xl max-w-2xl">
           <p className="text-lg md:text-xl leading-relaxed mb-4">
             "I absolutely love Fresh Harvest! The quality of their produce is
             outstanding. It's always fresh, flavorful, and delicious. The

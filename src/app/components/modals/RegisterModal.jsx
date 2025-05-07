@@ -1,6 +1,7 @@
 "use client";
 import { useRegisterUserMutation } from "@/redux/features/authApi";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function RegisterModal({ onClose, onSwitch }) {
   const [formData, setFormData] = useState({
@@ -17,8 +18,8 @@ export default function RegisterModal({ onClose, onSwitch }) {
   const handleRegister = async () => {
     try {
       const res = await registerUser(formData).unwrap();
-      alert("Registration successful!");
-      onSwitch(); // Switch to login
+      toast.success("Registration successful!");
+      onClose();
     } catch (err) {
       // Error already available from RTK Query
     }

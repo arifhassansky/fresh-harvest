@@ -7,7 +7,7 @@ import {
   clearSingleProduct,
   fetchSingleProduct,
 } from "@/redux/features/singleProductSlice";
-import RelatedProducts from "@/components/home/ProductDetailsPage/RelatedProducts";
+import RelatedProducts from "@/app/components/home/ProductDetailsPage/RelatedProducts";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
@@ -15,7 +15,7 @@ const ProductDetailsPage = () => {
   const { product, loading, error } = useSelector(
     (state) => state.singleProduct
   );
-  const [activeTab, setActiveTab] = useState("description"); // State to track active tab
+  const [activeTab, setActiveTab] = useState("description");
 
   useEffect(() => {
     if (id) {
@@ -111,7 +111,7 @@ const ProductDetailsPage = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="bg-white w-[894px] h-[248px] rounded-xl p-6 shadow-sm text-gray-700 leading-relaxed">
+          <div className="bg-white max-w-[894px] h-[248px] rounded-xl p-6 shadow-sm text-gray-700 leading-relaxed">
             {activeTab === "description"
               ? product.description || "No additional description available."
               : product.info || "No reviews available right now."}
